@@ -1,0 +1,27 @@
+.logo{
+    
+}
+
+.logo > img{
+    width: 103px;
+}
+
+.serch_input{
+    /* background: gainsboro; */
+}
+
+.serch_input > input {
+    height: 25px;
+    /* border-radius: 10px; */
+    background: gainsboro;
+    padding: 11px;
+    border: none;
+}
+
+.serch_input > input:focus {
+    outline: none;
+}
+
+.menu_icon{
+    /* background: gainsboro; */
+}
