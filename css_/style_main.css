@@ -1,153 +1,398 @@
-body,
-h1,
-p {
+:root {
+    --margin: 0 100px;
+}
+.font-weight{
+    font-weight: bold;
+}
+
+.overtext{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+body,h1,p{
     margin: 0;
 }
+.topbox{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+}
 
-.bg_main {
+.nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 975px;
     position: relative;
-    margin: 1rem;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
-.nav_menu {
+.logo{
+    padding-left: 40px;
+    float: left;
+    width: 103px;
+    height:29px;
+}
+
+.logo > img{
+    width: 103px;
+}
+
+.serch_input{
+    color: rgb(142, 142, 142);
     position: relative;
-    display: flex;
 }
 
-.logo {
-    padding-top: 9px;
-}
-
-.logo > img {
-    width: 103px; height:29px
-}
-
-.serch {
-    display: flex;
-    position: relative;
-    margin-left: 3rem;
-    display: block;
-}
-
-.serch > div {
-    display: block;
-    position: absolute;
-    top: 60%;
-    left: 20px;
-    transform: translate(-50%, -50%);
-}
-
-.serch > input {
-    position: absolute;
-    width: 280px;
-    border-radius: 10px;
-    background: gainsboro;
-    padding: 10px;
+.serch_text {
+    padding: 16px;
+    width: 236px;
+    height: 36px;
+    color: rgb(142, 142, 142);
+    background: #EFEFEF;
     border: none;
 }
-.serch > input:focus {
-    outline: none;
-}
 
-.serch > input::placeholder {
-    font-size: 15px;
+.serch_text::placeholder{
     padding-left: 30px;
 }
 
-.icon {
-    cursor: pointer;
-    align-items: center;
+input:focus::placeholder{
+    padding-left: 0px;
+}
+
+.serch_text:focus {
+    padding-left: 20px;
+    outline: none;
+}
+
+.mag{
+    position: absolute;
+    left: 30px;
+    padding-right: 20px;
+}
+
+.menu_icon{
+    width: 278px;
+}
+
+.icons{
+    padding-left: 20px;
+}
+
+.content{
+    /* max-width: 1300px; */
+    position: relative;
+    padding: 30px;
+}
+
+.feed_content{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    display: flex;
-}
-.icons {
-    margin-right: 1rem;
-}
-
-.content_box{
-    display: flex;
+    width: 614px;
+    /* margin: auto; */
+    /* padding: 0 35% 0 10%;; */
 }
 
-.feed_content {
-    width: 70%;
-    margin: 10px 20px 0 25px;
-    height: 600px;
-    /* background: gray; */
-}
 .member_info{
-    width: 30%;
-    margin: 10px 10px 0 15px;
-    height: 600px;
-    background: gray;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    width: 293px;
+    height: 300px;
+    margin: 0 30px 0 30px;
+}
+
+.profile_img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .member_story{
-    width: 100%;
-    height: 85px;
-    background: red;
+    width: 614px;
+    height: 119px;
+    padding: 0 16px 0 16px;
+    margin-bottom: 24px;
+    border: 1px solid #dbdbdb;
 }
 
 .account_info{
-    width: 100%;
+    width: 614px;
     height: 60px;
-    background: red;
-    margin: 14px 0 0 0;
+    border: 1px solid #dbdbdb;
 }
-
+ 
 .photo{
-    width: 100%;
-    height: 739px;
-    background: blue;
+    width: 614px;
 }
+/* .carousel-item > img {
+    width: 614px;
+    height: auto !important;
+} */
 
 .like_button{
-    width: 100%;
+    width: 614px;
     height: 54px;
-    background: orange;
+}
+
+.like-text{
+    padding: 0px 16px 0 16px;
+    margin-bottom: 8px;
 }
 
 .like_info{
-   width: 100%;
+    width: 100%;
     height: 18px;
-    background: skyblue; 
+    font-weight: bold;
+}
+
+.comment_count{
+    padding: 0 16px 0 16px;
+    width: 614px;
+    height: 18px;
+}
+
+.c_count{
+    padding: 0 16px 0 16px;
+    width: 614px;
+    height: 18px;
+    color: #8e8e8e;
+}
+
+.time {
+    padding: 0 16px 0 16px;
+    width: 614px;
+    height: 18px;
+    color: #8e8e8e;
+    font-size: 8px;
+}
+
+.comment_text{
+    width:400px;
+}
+
+.content_t{
+    width: 233px;
+}
+
+.write_content{
+    width: 614px;
+    padding: 0 16px 0 16px;
+}
+
+.comment-heart{
+    right: 0px;
+    font-size: 5px;
 }
 
 .comment{
     width: 100%;
-    height: 53px;
-    background: greenyellow;
-
-}
-
-.comment_info{
-    width: 100%;
     height: 18px;
-    background: goldenrod;
+    background-color: rgb(77, 255, 0);
+}
+
+.comment_info_box{
+    width: 614px;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
 
 }
 
-.time_info{
-    width: 100%;
-    height: 18px;
-    background: royalblue;
-}
-
-.comment_input{
-    width: 100%;
+.comment_write{
+    padding: 6px 8px;;
+    width: 614px;
     height: 53px;
-    background: silver;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
 }
 
-@media (max-width: 768px) {
-    .serch > input {
-        width: 220px;
-    }
+.comment_input > input{
+    width: 514px;
+    height: 18px;
+    border: none;
 }
 
-@media (max-width: 650px) {
-    .serch{
+.comment_input > input:focus{
+    outline: none;
+}
+
+.account_profile{
+    width: 293px;
+    height: 56px;
+    padding: 16px 0px;
+}
+
+.member_recommend{
+    width: 325px;
+    height: 19px;
+    padding: 16px 0px;
+}
+
+.follow_member{
+    width: 321px;
+    height: 48px;
+}
+
+.member_follow_button{
+    right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0095f6;
+}
+
+.follow_member_img{
+    width: 32px;
+    height: 32px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.follow_member_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.story_box{
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: .01em;
+    max-width: 74px;
+    font-size: .8em;
+}
+
+.story_list{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 7px;
+    overflow: hidden;
+    border: 2px solid #e81c1c;
+}
+
+
+.story_list > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account_info_box{
+    padding: 16px;
+    width: 566px;
+    height: 60px;
+}
+
+.thum_img{
+    width: 32px;
+    height: 32px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #e81c1c;
+}
+
+.thum_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account_name{
+    margin-left: 14px;
+}
+
+.account_sub_menu{
+    right: 20px;
+}
+
+.like_button_box{
+    padding: 6px 16px 8px 16px;
+}
+.like_button > div{
+    font-size: 17px;
+}
+.left-margin-15{
+    margin-left: 15px;
+}
+
+.save_button{
+    right: 15px;
+    font-size: 18px;
+}
+
+.footer{
+    padding: 30px 0px;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+@media (max-width: 1300px){
+    .member_info{
         display: none;
+    }
+    /* .feed_content{
+        margin: 0 150px;
+    } */
+}
+
+.profile{
+    width: 56px;
+    height: 56px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.profile > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.account_change{
+    right: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0095f6
+}
+
+.feedimg{
+    width: 614px;
+    height: auto !important; 
+}
+
+.all-view{
+    right: 48px
+}
+.like_button_click{
+    color: red;
+    display: none;
+    margin-left: 0px;
+}
+.like_button_no_click{
+    display: block;
+}
+
+@media (max-width: 600px){
+    .content{
+        padding: 0px;
     }
 }
