@@ -14,40 +14,29 @@
     <title>인스타그램 클론코딩</title>
 </head>
 
-<div class="container">
-    <div class="nav row p-3">
+    <div class="nav sticky-top row p-3 mb-3 navbar-light bg-light">
         <div class="col logo">
             <img src="logo.png" alt="" srcset="">
         </div>
-
-        <div class="col serch_input">
-            <input class="rounded" type="text">
+        
+        <div id="serch_input" class="serch_input col-5 d-flex align-items-center">
+            <div class="mag"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input class="rounded serch_text" type="text" placeholder="검색">
         </div>
 
-        <div class="col d-flex justify-content-around align-items-center menu_icon">
+        <div class="col-4 d-flex justify-content-around align-items-center menu_icon">
             <i class="icons fa-solid fa-house fa-lg"></i>
             <i class="icons fa-solid fa-paper-plane fa-lg"></i>
             <i class="icons fa-solid fa-compass fa-lg"></i>
             <i class="icons fa-solid fa-heart fa-lg"></i>
-            <i class="icons fa-solid fa-circle fa-lg"></i>
-        </div>
-
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            Column
-        </div>
-        <div class="col">
-            Column
-        </div>
-        <div class="col">
-            Column
+            <div class="profile_img"><img class="img-fluid" src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/16/a20396a1-288b-4b43-9ef8-e74b6b9709f0.jpg" alt="" srcset=""></div>
         </div>
     </div>
-</div>
 
+<div class="row d-flex content p-3">
+    <div class="col img-fluid mx-5 feed_content"></div>
+
+    <div class="col-4 member_info">123</div>
+</div>
 
 </div>
