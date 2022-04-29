@@ -11,9 +11,11 @@ $(function () {
 
     $('.serch_text').focus(function () {
         $('.mag').hide()
+        $('.serch-box2').show()
     });
     $('.serch_text').blur(function () {
         $('.mag').show()
+        $('.serch-box2').hide()
     });
 
     $('.comment-heart').click(function(){

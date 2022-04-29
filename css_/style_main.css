@@ -5,6 +5,16 @@
     font-weight: bold;
 }
 
+.serch-box2{
+    display: none;
+    left: -20px;
+    top: 46px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #8e8e8e;
+}
+
 .overtext{
     overflow: hidden;
     white-space: nowrap;
@@ -18,8 +28,7 @@ body,h1,p{
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
     border-bottom: 1px solid #dbdbdb;
     padding: 10px 20px;
 }
@@ -126,7 +135,7 @@ input:focus::placeholder{
 .member_story{
     width: 614px;
     height: 119px;
-    padding: 0 16px 0 16px;
+    padding: 0 10px 0 10px;
     margin-bottom: 24px;
     border: 1px solid #dbdbdb;
 }
