@@ -8,7 +8,7 @@ $(function () {
     //     $(this).css("opacity", "1.0");
     // })
 
-    $(".bbs_menu_text").click(function(){
+    $(".bbs_menu_text").click(function () {
         $(this).css("text-decoration", "overline");
     })
 
@@ -30,12 +30,44 @@ $(function () {
         $('.serch-box2').hide()
     });
 
-    $('.comment-heart').click(function(){
-        var id_check = $(this).val();
-        console.log(id_check)
-    });
+    // $('.comment-heart').click(function(){
+    //     var id_check = $(this).val();
+    //     console.log(id_check)
+    // });
 
-    $("#alpreah_input").keydown(function(key) {
+
+    $('.img_box').click(function(){
+        $('.feed_modal').css('display', 'flex')
+        $('body').addClass('hidden').on('scroll touchmove mousewheel', function(e){
+            e.preventDefault();
+        });
+    })
+
+    $('.feed_modal').click(function(event){
+        $('.feed_modal').hide()
+        $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+    })
+
+    // $('.img_box').click(function () {
+    //     $('.feed_modal').css("display", "flex");
+    //     //스크롤 막기
+    //     $('html, body').css({ 'overflow': 'hidden', 'height': '100%' })
+    //     $('.feed_modal').on('scroll touchmove mousewheel', function (event) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //         return false;
+    //     });
+    // });
+
+        // $(".feed_modal").click(function (event) {
+
+        //     $('.feed_modal').hide()
+        //     $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+
+        // });
+   
+
+    $("#alpreah_input").keydown(function (key) {
         if (key.keyCode == 13) {
             comment_text = $('#comment_input').val()
             html = `<div class="position-relative d-flex align-items-center mb-1">
@@ -50,12 +82,14 @@ $(function () {
     });
 })
 
-function likeon(){
+
+
+function likeon() {
     $('.like_button_no_click').hide();
     $('.like_button_click').show();
 }
 
-function likeoff(){
+function likeoff() {
     $('.like_button_click').hide();
     $('.like_button_no_click').show();
 }

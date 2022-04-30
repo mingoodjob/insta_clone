@@ -404,3 +404,5 @@ input:focus::placeholder{
 .like_button_no_click{
     display: block;
 }
+
+.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
