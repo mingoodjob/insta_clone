@@ -1,5 +1,17 @@
 $(function () {
 
+    // $(".img_box").mouseover(function(){
+    //     $(this).css("opacity", "0.4");
+    // })
+    // $(".img_box").mouseleave(function(){
+    //     // $(this).css("color", "black");
+    //     $(this).css("opacity", "1.0");
+    // })
+
+    $(".bbs_menu_text").click(function(){
+        $(this).css("text-decoration", "overline");
+    })
+
     $(window).resize(function () {
         if ($(window).width() < 768) {
             $('.serch_input').addClass('d-none')
