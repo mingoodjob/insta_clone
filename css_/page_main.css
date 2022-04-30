@@ -108,6 +108,14 @@
     font-size: 12px;
 }
 
+.feed_open{
+    top: 50px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    z-index: 99;
+}
+
 @media (max-width: 600px){
 
 }

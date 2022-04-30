@@ -389,8 +389,8 @@ input:focus::placeholder{
 }
 
 .feedimg{
-    width: 614px;
-    height: auto !important; 
+    width: 100%;
+    height: 700px !important; 
 }
 
 .all-view{
