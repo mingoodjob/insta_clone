@@ -8,9 +8,6 @@ $(function () {
     //     $(this).css("opacity", "1.0");
     // })
 
-    $(".bbs_menu_text").click(function () {
-        $(this).css("text-decoration", "overline");
-    })
 
     $(window).resize(function () {
         if ($(window).width() < 768) {
@@ -43,10 +40,17 @@ $(function () {
         });
     })
 
-    $('.feed_modal').click(function(event){
-        $('.feed_modal').hide()
-        $('body').removeClass('hidden').off('scroll touchmove mousewheel');
-    })
+    // $('.feed_modal').click(function(event){
+    //     $('.feed_modal').hide()
+    //     $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+    // })
+
+    $(document).mouseup(function (e){
+        if($(".feed_modal").has(e.target).length === 0){
+            $(".feed_modal").css('display','none');
+            $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+        }
+    });
 
     // $('.img_box').click(function () {
     //     $('.feed_modal').css("display", "flex");
