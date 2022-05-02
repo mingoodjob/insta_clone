@@ -2,15 +2,26 @@
     --margin: 0 100px;
 }
 
-a:link { color: red; text-decoration: none;}
-a:visited { color: black; text-decoration: none;}
-a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
+a:link {
+    color: red;
+    text-decoration: none;
+}
 
-.font-weight{
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.font-weight {
     font-weight: bold;
 }
 
-.serch-box2{
+.serch-box2 {
     display: none;
     left: -20px;
     top: 46px;
@@ -20,16 +31,19 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
     border: 1px solid #8e8e8e;
 }
 
-.overtext{
+.overtext {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-body,h1,p{
+body,
+h1,
+p {
     margin: 0;
 }
-.topbox{
+
+.topbox {
     top: 0;
     left: 0;
     right: 0;
@@ -38,27 +52,27 @@ body,h1,p{
     padding: 10px 20px;
 }
 
-.nav{
+.nav {
     top: 0;
     left: 0;
     right: 0;
     width: 975px;
     position: relative;
-    
+
 }
 
-.logo{
+.logo {
     padding-left: 40px;
     float: left;
     width: 103px;
-    height:29px;
+    height: 29px;
 }
 
-.logo > img{
+.logo>img {
     width: 103px;
 }
 
-.serch_input{
+.serch_input {
     color: rgb(142, 142, 142);
     position: relative;
 }
@@ -72,11 +86,11 @@ body,h1,p{
     border: none;
 }
 
-.serch_text::placeholder{
+.serch_text::placeholder {
     padding-left: 30px;
 }
 
-input:focus::placeholder{
+input:focus::placeholder {
     padding-left: 0px;
 }
 
@@ -85,27 +99,27 @@ input:focus::placeholder{
     outline: none;
 }
 
-.mag{
+.mag {
     position: absolute;
     left: 30px;
     padding-right: 20px;
 }
 
-.menu_icon{
+.menu_icon {
     width: 278px;
 }
 
-.icons{
+.icons {
     padding-left: 20px;
 }
 
-.content{
+.content {
     /* max-width: 1300px; */
     position: relative;
     padding: 30px;
 }
 
-.feed_content{
+.feed_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +128,7 @@ input:focus::placeholder{
     /* padding: 0 35% 0 10%;; */
 }
 
-.member_info{
+.member_info {
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
@@ -123,7 +137,7 @@ input:focus::placeholder{
     margin: 0 30px 0 30px;
 }
 
-.profile_img{
+.profile_img {
     width: 30px;
     height: 30px;
     margin-left: 20px;
@@ -131,13 +145,13 @@ input:focus::placeholder{
     overflow: hidden;
 }
 
-.profile_img > img{
+.profile_img>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.member_story{
+.member_story {
     width: 614px;
     height: 119px;
     padding: 0 10px 0 10px;
@@ -145,17 +159,18 @@ input:focus::placeholder{
     border: 1px solid #dbdbdb;
 }
 
-.account_info{
+.account_info {
     width: 614px;
     height: 60px;
     border: 1px solid #dbdbdb;
 }
- 
-.photo{
+
+.photo {
     width: 614px;
     border: 1px solid #dbdbdb;
     border-bottom: none;
 }
+
 /* .slider_img > img{
     width: 614px;
     height: 400px;
@@ -165,29 +180,29 @@ input:focus::placeholder{
     height: auto !important;
 } */
 
-.like_button{
+.like_button {
     width: 614px;
     height: 54px;
 }
 
-.like-text{
+.like-text {
     padding: 0px 16px 0 16px;
     margin-bottom: 8px;
 }
 
-.like_info{
+.like_info {
     width: 100%;
     height: 18px;
     font-weight: bold;
 }
 
-.comment_count{
+.comment_count {
     padding: 0 16px 0 16px;
     width: 614px;
     height: 18px;
 }
 
-.c_count{
+.c_count {
     padding: 0 16px 0 16px;
     width: 614px;
     height: 18px;
@@ -202,31 +217,31 @@ input:focus::placeholder{
     font-size: 8px;
 }
 
-.comment_text{
-    width:400px;
+.comment_text {
+    width: 400px;
 }
 
-.content_t{
+.content_t {
     width: 233px;
 }
 
-.write_content{
+.write_content {
     width: 614px;
     padding: 0 16px 0 16px;
 }
 
-.comment-heart{
+.comment-heart {
     right: 0px;
     font-size: 5px;
 }
 
-.comment{
+.comment {
     width: 100%;
     height: 18px;
     background-color: rgb(77, 255, 0);
 }
 
-.comment_info_box{
+.comment_info_box {
     width: 614px;
     border-bottom: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
@@ -234,8 +249,9 @@ input:focus::placeholder{
 
 }
 
-.comment_write{
-    padding: 6px 8px;;
+.comment_write {
+    padding: 6px 8px;
+    ;
     width: 614px;
     height: 53px;
     border-bottom: 1px solid #dbdbdb;
@@ -243,53 +259,54 @@ input:focus::placeholder{
     border-left: 1px solid #dbdbdb;
 }
 
-.comment_input > input{
+.comment_input>input {
     width: 514px;
     height: 18px;
     border: none;
 }
 
-.comment_input > input:focus{
+.comment_input>input:focus {
     outline: none;
 }
 
-.account_profile{
+.account_profile {
     width: 293px;
     height: 56px;
     padding: 16px 0px;
 }
 
-.member_recommend{
+.member_recommend {
     width: 325px;
     height: 19px;
     padding: 16px 0px;
 }
 
-.follow_member{
+.follow_member {
     width: 321px;
     height: 48px;
 }
 
-.member_follow_button{
+.member_follow_button {
     right: 15px;
     font-size: 12px;
     font-weight: bold;
     color: #0095f6;
 }
 
-.follow_member_img{
+.follow_member_img {
     width: 32px;
     height: 32px;
     border-radius: 70%;
     overflow: hidden;
 }
 
-.follow_member_img > img{
+.follow_member_img>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.story_box{
+
+.story_box {
     overflow: hidden;
     text-align: center;
     text-overflow: ellipsis;
@@ -299,7 +316,7 @@ input:focus::placeholder{
     font-size: .8em;
 }
 
-.story_list{
+.story_list {
     width: 66px;
     height: 66px;
     border-radius: 50%;
@@ -309,19 +326,19 @@ input:focus::placeholder{
 }
 
 
-.story_list > img{
+.story_list>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.account_info_box{
+.account_info_box {
     padding: 16px;
     width: 566px;
     height: 60px;
 }
 
-.thum_img{
+.thum_img {
     width: 32px;
     height: 32px;
     /* padding: 10px; */
@@ -330,87 +347,102 @@ input:focus::placeholder{
     border: 2px solid #e81c1c;
 }
 
-.thum_img > img{
+.thum_img>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.account_name{
+.account_name {
     margin-left: 14px;
 }
 
-.account_sub_menu{
+.account_sub_menu {
     right: 20px;
 }
 
-.like_button_box{
+.like_button_box {
     padding: 6px 16px 8px 16px;
 }
-.like_button > div{
+
+.like_button>div {
     font-size: 17px;
 }
-.left-margin-15{
+
+.left-margin-15 {
     margin-left: 15px;
 }
 
-.save_button{
+.save_button {
     right: 15px;
     font-size: 18px;
 }
 
-.footer{
+.footer {
     padding: 30px 0px;
     font-size: 12px;
     color: #c7c7c7;
 }
-@media (max-width: 1300px){
-    .member_info{
+
+@media (max-width: 1300px) {
+    .member_info {
         display: none;
     }
+
     /* .feed_content{
         margin: 0 150px;
     } */
 }
 
-.profile{
+.profile {
     width: 56px;
     height: 56px;
     border-radius: 70%;
     overflow: hidden;
 }
 
-.profile > img{
+.profile>img {
     width: 100%;
     height: 100%;
     border-radius: 70%;
     object-fit: cover;
 }
 
-.account_change{
+.account_change {
     right: 18px;
     font-size: 12px;
     font-weight: bold;
     color: #0095f6
 }
 
-.feedimg{
+.feedimg {
     width: 100%;
-    height: 700px !important; 
+    height: 700px !important;
 }
 
-.all-view{
+.all-view {
     right: 48px
 }
-.like_button_click{
+
+.like_button_click {
     color: red;
     display: none;
     margin-left: 0px;
 }
-.like_button_no_click{
+
+.like_button_no_click {
     display: block;
 }
 
-.bx-wrapper {border:0;background:#fbfbfb;box-shadow:none;}
+.bx-wrapper {
+    border: 0;
+    background: #fbfbfb;
+    box-shadow: none;
+}
 
-.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
+.hidden {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden !important;
+    touch-action: none;
+}

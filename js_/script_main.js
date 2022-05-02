@@ -33,9 +33,9 @@ $(function () {
     // });
 
 
-    $('.img_box').click(function(){
+    $('.img_box').click(function () {
         $('.feed_modal').css('display', 'flex')
-        $('body').addClass('hidden').on('scroll touchmove mousewheel', function(e){
+        $('body').addClass('hidden').on('scroll touchmove mousewheel', function (e) {
             e.preventDefault();
         });
     })
@@ -56,19 +56,19 @@ $(function () {
     //     });
     // });
 
-        // $(".feed_modal").click(function (event) {
+    // $(".feed_modal").click(function (event) {
 
-        //     $('.feed_modal').hide()
-        //     $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+    //     $('.feed_modal').hide()
+    //     $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
 
-        // });
-        
-        $(document).mouseup(function (e){
-            if($(".feed_modal").has(e.target).length === 0){
-                $(".feed_modal").css('display','none');
-                $('body').removeClass('hidden').off('scroll touchmove mousewheel');
-            }
-        });    
+    // });
+
+    $(document).mouseup(function (e) {
+        if ($(".feed_modal").has(e.target).length === 0) {
+            $(".feed_modal").css('display', 'none');
+            $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+        }
+    });
 
     $("#alpreah_input").keydown(function (key) {
         if (key.keyCode == 13) {
@@ -81,9 +81,10 @@ $(function () {
             $('#comment_input').val('')
             $('#comment_post').append(html)
         }
+        // return false
     });
 
-    $('.slider').bxSlider(); 
+    $('.slider').bxSlider();
 })
 
 
