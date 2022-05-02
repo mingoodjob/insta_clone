@@ -43,10 +43,10 @@ $(function () {
         });
     })
 
-    $('.feed_modal').click(function(event){
-        $('.feed_modal').hide()
-        $('body').removeClass('hidden').off('scroll touchmove mousewheel');
-    })
+    // $('.feed_modal').click(function(event){
+    //     $('.feed_modal').hide()
+    //     $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+    // })
 
     // $('.img_box').click(function () {
     //     $('.feed_modal').css("display", "flex");
@@ -65,7 +65,13 @@ $(function () {
         //     $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
 
         // });
-   
+        
+        $(document).mouseup(function (e){
+            if($(".feed_modal").has(e.target).length === 0){
+                $(".feed_modal").css('display','none');
+                $('body').removeClass('hidden').off('scroll touchmove mousewheel');
+            }
+        });    
 
     $("#alpreah_input").keydown(function (key) {
         if (key.keyCode == 13) {
@@ -73,14 +79,16 @@ $(function () {
             html = `<div class="position-relative d-flex align-items-center mb-1">
             <div class="font-weight col-2">이민기</div>
             <div class="overtext comment_text">${comment_text}</div>
-            <!-- <div class="col mx-2">더보기</div> -->
             <div class="position-absolute comment-heart"><i class="fa-regular fa-heart"></i></div>
-            </div>`
+        </div>`
             $('#comment_input').val('')
             $('#comment_post').append(html)
         }
     });
+
+    $('.slider').bxSlider(); 
 })
+
 
 
 
