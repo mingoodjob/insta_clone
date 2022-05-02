@@ -8,9 +8,6 @@ $(function () {
     //     $(this).css("opacity", "1.0");
     // })
 
-    $(".bbs_menu_text").click(function () {
-        $(this).css("text-decoration", "overline");
-    })
 
     $(window).resize(function () {
         if ($(window).width() < 768) {
