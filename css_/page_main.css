@@ -128,7 +128,7 @@
 
 .modal_photo {
     background: black;
-    width: 70%;
+    width: 60%;
     height: 100%;
 }
 
@@ -140,7 +140,7 @@
 
 .modal_content {
     background: white;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -162,6 +162,47 @@
     padding: 20px 0 10px 20px;
     display: flex;
     align-items: center;
+}
+
+.modal_commnet{
+    border-bottom: 1px solid #f0f0f0;
+    height: 470px;
+}
+
+.body_like_button_box{
+    padding: 10px 20px;
+    border-bottom: 1px solid #f0f0f0;;
+}
+
+.modal_menu_btn{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.modal_save{
+    display: flex;
+    justify-content: end;
+    width: 350px;
+}
+
+.modal_comment_input{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.modal_comment_input > input{
+    border: none;
+}
+
+.modal_comment_input > input:focus{
+    outline: none;
+}
+
+.modal_menu_btn > div{
+
 }
 
 .modal_time {

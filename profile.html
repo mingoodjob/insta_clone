@@ -26,9 +26,11 @@
         <div class="modal_content">
             <div class="modal_account">
                 <div class="modal_account_img"><img class="pr_img" src="img/1.jpg" alt="" srcset=""></div>
-                <div class="font-weight" style="font-size: 14px; padding: 0 41% 0 7%;">conding_min</div>
-                <div><i class="fa-solid fa-ellipsis"></i></div>
-            </div>
+                <div class="font-weight" style="font-size: 14px; padding: 0 0 0 12px;">conding_min</div>
+                <div class="modal_menu_btn">
+                    <div><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                </div>
 
             <div class="modal_commnet">
                 <div class="modal_comment_account">
@@ -40,6 +42,35 @@
                     <div>1일전</div>
                     <div>답글 달기</div>
                 </div>
+            </div>
+            <div class="body_like_button_box">
+                <div class="d-flex position-relative align-items-center"> 
+                    <div class="position-relative d-flex align-items-center">
+                        <div onclick="likeon()" class="like_button_no_click"><i class="fa-regular fa-heart fa-lg"></i>
+                        </div>
+                        <div onclick="likeoff()" class="like_button_click"><i class="fa-solid fa-heart fa-lg"></i></div>
+                        <div class="left-margin-15"><i class="fa-regular fa-comment fa-lg"></i></div>
+                        <div class="left-margin-15"><i class="fa-regular fa-paper-plane"></i></div>
+                        <div class="modal_save">
+                        <div class="save_button"><i class="fa-regular fa-bookmark"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                   <div class="font-weight" style="font-size:14px; padding-top: 15px;">좋아요 750개</div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class="px-3"><i class="fa-regular fa-face-smile-beam fa-lg"></i></div>
+                <form id="alpreah_input">
+                    <div class="modal_comment_input">
+                        <input id="modal_comment_input" type="text" placeholder="댓글 달기...">
+                    </div>
+                </form>
+
+            </div>
+
             </div>
         </div>
     </div>
@@ -56,7 +87,6 @@
 
             <div class="serch-box2 position-absolute">
                 <div class="p-2 font-weight" style="color:black">최근 검색 항목
-
                 </div>
                 <div class="d-flex wd-300 align-items-center justify-content-center">
                     <div>최근 검색 내역 없음.</div>

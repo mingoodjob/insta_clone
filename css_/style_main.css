@@ -409,7 +409,7 @@ input:focus::placeholder {
 }
 
 .account_change {
-    right: 18px;
+    right: 0px;
     font-size: 12px;
     font-weight: bold;
     color: #0095f6
@@ -437,7 +437,10 @@ input:focus::placeholder {
 .bx-wrapper {
     border: 0;
     background: #fbfbfb;
-    box-shadow: none;
+    box-shadow: none;    
+}
+.bx-pager{
+    top: 730px;
 }
 
 .hidden {
